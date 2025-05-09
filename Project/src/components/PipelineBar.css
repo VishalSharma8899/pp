@@ -1,0 +1,67 @@
+.pipeline-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px 0px;
+  /* padding-left: 16px; */
+  margin: 10px 0 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+   
+}
+
+.pipeline-header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.pipeline-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pipeline-counts {
+  display: flex;
+  gap: 20px;
+}
+
+.count-block {
+  text-align: center;
+  margin-left:1rem
+}
+
+.count-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.count-label {
+  font-size: 12px;
+  color: #777;
+}
+
+.pipeline-table {
+  margin-top: 20px;
+  
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* border-top: 1px solid #ccc; */
+  padding: 8px 0;
+}
+
+.table-header {
+  /* font-weight: bold; */
+  margin-left:-3px;
+  color:#353232;
+  border-bottom: 1px solid #ccc;
+  /* background-color: #f5f5f5; */
+}
