@@ -1,0 +1,89 @@
+ /* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Landing page container */
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0; /* Only vertical padding */
+  background: linear-gradient(135deg, #ecf2ff, #d8e6fc);
+  width: 100%;
+}
+
+/* Text content section */
+.content {
+  max-width: 50%;
+  padding-left: 50px;
+}
+
+/* Main headings */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #3498db;
+}
+
+/* Button style */
+.get-started-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Image container */
+.image {
+  max-width: 50%;
+  padding-right: 50px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .content,
+  .image {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .image {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,146 @@
+ /* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1vh; /* Reduced the height */
+  padding: 0 16px; /* Reduced the padding */
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ 
+
+ .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  margin-left: -10vw;
+  margin-bottom: 40px;
+}
+
+.logo-icon {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a58ca; /* blue-ish */
+  margin-right: 10px;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.line1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.line2 {
+  font-size: 16px;
+  color: #0a58ca; 
+}
+
+
+.logo-gray {
+  color: gray;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;  
+  margin-bottom: 5vh;
+     border: 1px solid violet;
+border-radius: 20px;
+
+}
+
+.nav-link {
+  background: #f1f2f4;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 8px; /* Reduced the padding */
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-link.active {
+  background-color: #0047ff;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced the gap */
+  margin-right: -8vw;
+    margin-bottom: 5vh;
+}
+
+.avatar {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px; /* Reduced avatar size */
+  height: 24px; /* Reduced avatar size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+/* Default styles for desktop (already provided above) */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .nav-link {
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+
+  .user-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .menu-toggle {
+    display: block;  
+  }
+}
