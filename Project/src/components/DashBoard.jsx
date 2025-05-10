@@ -6,12 +6,11 @@ const DashBoard = () => {
     return (
         <div className='parent'>
             <div className='first'>
-                <span>My deals</span>
+                 <span>My deals</span>
                 <span>All Client</span>
-                <span style={{ textAlign: 'left', paddingTop: '.5rem', paddingBottom: '1rem', backgroundColor: '#EEF2FD', width: '50vw', height: '5px', borderRadius: '0', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', border: 0, marginLeft: '15rem' }}>
-                    <span style={{ borderRadius: '50%' }}>MS</span>
+                <span style={{ textAlign: 'left', paddingTop: '.5rem', paddingBottom: '1rem',backgroundColor: '#EEF2FD', width: '50vw', height: '10px', borderRadius: '0', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', border: 0, marginLeft: '15rem' }}>
+                    <span style={{ borderRadius: '50%'  }}>MS</span>
                 </span>
-                <span style={{marginLeft: '200px'}}>Clear</span>
             </div>
             <div >
                  <div>
